@@ -2,7 +2,7 @@
 using namespace std;
 int main (){
 
- int n , count=0 ;
+ int n , sum=0 ;
 
  cout<<"Enter Number :- ";
  cin>>n;
@@ -10,11 +10,12 @@ int main (){
  int x= n;
 
 while(n!=0) {
-       n = n/10;
-       count ++;
+    int digit = n%10;
+    sum +=digit;
+    n = n/10;
 }
 
-cout<<"Count of the digits of the number "<<x<<" is :- "<<count<<endl;
+cout<<"Sum of the digits of the number "<<x<<" is :- "<<sum<<endl;
 
     return 0; 
 
